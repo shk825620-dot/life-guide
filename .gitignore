@@ -1,0 +1,17 @@
+# Local review records, private requirements and machine-specific evidence
+/审查证据/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Temporary test outputs
+*.tmp
+*.log
+__pycache__/
+
+# Unrelated local/generated artifacts in this workspace
+/_ppt_render/
+/--name/
+/build/

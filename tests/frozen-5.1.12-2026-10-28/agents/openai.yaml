@@ -1,0 +1,7 @@
+interface:
+  display_name: "减少信息差"
+  short_description: "帮你核查事实、扩展选择、比较路线并设计可执行下一步"
+  default_prompt: "Use $life-guide in fast or major-decision mode to compare realistic options, verify claims that could change the decision, and show opportunity cost, time, robustness, and the lowest-cost next step."
+
+policy:
+  allow_implicit_invocation: true

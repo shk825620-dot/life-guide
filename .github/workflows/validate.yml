@@ -1,0 +1,29 @@
+name: Validate Agent Skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  package:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Structural package check
+        run: python tests/validate_package.py
+      - name: Information-gap protocol check
+        run: python tests/test_information_gap_protocol.py
+      - name: Rule singularity check
+        run: python tests/test_rule_singularity.py
+      - name: Single-source rules check
+        run: python tests/test_single_source_rules.py
+      - name: Release hygiene check
+        run: python tests/test_release_hygiene.py
+      - name: CI coverage check
+        run: python tests/test_ci_coverage.py
