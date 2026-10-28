@@ -2,7 +2,7 @@
 
 你现在继续担任 `life-guide` 通用 Skill 的独立审计员、行为验收员和发布门槛监督者。
 
-目标目录：`E:\KSHGitHub\skills\life-guide\`
+目标目录：`<repo-root>\skills\life-guide\`
 
 当前已知候选版：5.1.12。不要相信下面任何旧结论，先从磁盘重新核实。
 
