@@ -55,6 +55,10 @@ def main() -> int:
         if marker not in evidence_section:
             problems.append(f"evidence section does not route: {marker}")
 
+    for marker in ("references/capability-check.md", "references/output-contract.md"):
+        if marker not in main_text:
+            problems.append(f"entry point does not route: {marker}")
+
     tier_start = main_text.find("### 1.5 选择调查档位")
     tier_end = main_text.find("### 2.", tier_start)
     tier = main_text[tier_start:tier_end] if tier_start != -1 and tier_end != -1 else ""

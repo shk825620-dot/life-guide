@@ -2,7 +2,7 @@
 
 - `agents/openai.yaml` — `2013c607443069e4b2967fee02db46fdeb8db65d6b90cdc76e1e35123a4b7287`
 - `assets/decision-log.md` — `3c4e9a06e2b32124ed309d6e27c95d3b7ea09c5d101a10e3f4796e48791b4abb`
-- `CHANGELOG.md` — `54ae4668f6880f1bba812a5ef9efeeb2ae79cb525c0de4b7c4eabe98c6d7eeea`
+- `CHANGELOG.md` — `95eb54685e557ad50502f656da6c87108edc49468f05b3e85800ad26fd076115`
 - `references/capability-check.md` — `24751f1122e437381643f3b4417e938b800d038a6baadb8ed68982c8f974166c`
 - `references/decision-framework.md` — `9cdeaa203262318a0ba939c3d33021de4e4426a1e1382ca9710fea19c1408d03`
 - `references/emotion-and-bias.md` — `912f9143f242d1b28d2b6d5a19dd490a4908da6830f7cc066b13e3bc7e6d47c1`
@@ -18,4 +18,4 @@
 - `references/search-playbook.md` — `1bf9739ff54c189de4f5704c11c903d3fba9d99d5ef9c4acb9007ce14be5e19a`
 - `references/supervision-protocol.md` — `f03f6382727e418a30e340f7c6b5f0af983928f1676d8c88caa0787db6967d55`
 - `references/tool-access.md` — `9d25ff4d4cde03a87f5985d3eccc4cb83ad85a79a2456c4d81942fbeaad5fbad`
-- `SKILL.md` — `f0f89427bf062696c39bb0ffea38e858fbf4ba82a891790d082102fb0c451446`
+- `SKILL.md` — `2da25a67ac5f32661e1e2a9ff327aee7ea5878625100578a7c009f38ceec588a`
