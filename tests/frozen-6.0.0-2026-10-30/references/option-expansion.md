@@ -73,3 +73,8 @@
 ## 方法来源
 
 整理时借鉴 [HBS 价值链视角](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-value-chain.aspx) 与 [Tom Ritchey 的形态分析](https://swemorph.com/ma.html) 的拆分维度、组合与相容性检查思路。不是完整 GMA 实施，不计算覆盖率，不复制外部 Skill，不保证全局最优。
+
+
+## 6. 覆盖范围记录
+
+停止扩展前，用一句话记录本题实际检查过的相关维度、暂不展开的维度及原因。只要某个未展开维度可能改变主推荐，就必须补查或明确列为最大未知；其余维度可以说明与当前目标无关、违反硬约束或验证成本不值得。这个记录证明搜索边界，不证明候选已经穷尽。
