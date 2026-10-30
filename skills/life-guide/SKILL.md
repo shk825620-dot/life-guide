@@ -2,7 +2,7 @@
 name: life-guide
 description: "Use when a user asks for a recommendation, route comparison, current tools, applicable rules, source reliability, or a personalized decision where missing options, assumptions, or constraints may change the answer. 适用于“推荐什么、怎么开始、有哪些选择、是否有现成工具、信息是否可靠、有没有更好路线”等需要调查、个人化判断或多方案比较的问题；简单事实问题不机械套用完整流程。"
 metadata:
-  version: "5.1.14"
+  version: "6.0.0"
   display_name: "减少信息差"
 ---
 
@@ -56,7 +56,9 @@ metadata:
 
 - 只扩展与本题有关的维度，不凑数量。
 - 用户限定比较范围时尊重范围；如果发现范围外有可能改变结果的重要路线，先简短说明其影响。
-- 搜索、工具和账号访问按 `references/search-playbook.md` 与 `references/tool-access.md` 执行。
+- 需要外部事实、文件、计算、登录或子 Agent 时，先按 `references/capability-check.md` 标记当前宿主能力；能力状态会影响结论时，向用户说明缺口和降级路径。
+
+搜索、工具和账号访问按 `references/search-playbook.md` 与 `references/tool-access.md` 执行。
 - 候选空间可能过窄，或用户提到可能打开其他参与位置的既有关系/资源时，读 `references/option-expansion.md`。
 
 ### 3. 核验会影响判断的信息
@@ -77,6 +79,8 @@ metadata:
 比较两条以上路线、或用户要求“最优/更稳”时，按 `references/decision-framework.md`「机会成本、相对耗时与稳健性」逐行说明：放弃什么及能否收回、各阶段投入与日历时间、最脆弱环节与失效条件。只列方案自身好处，或拿一条方案的学习时间比另一条的总周期，都不算完成比较；低影响、明显可逆的小事可省略这三行。
 
 不把不可比价值擅自折算成综合分；未知偏好只有在会改变选择时才交给用户。证据不足以确定唯一推荐时，明确给条件化判断，不伪装确定性。
+
+结论按 `references/output-contract.md` 选择最小可用答复合同；高影响或需要比较的任务不得省略依据状态、最大未知、可执行下一步和停止/改判条件。
 
 结论带上适用边界、置信理由、未验证项、推翻条件和**可执行下一步**。下一步应包含要做什么、成本/前置条件，以及最低成本如何验证或何时停止。只有工具名、课程名或“可以考虑”不算行动方案。
 
@@ -104,6 +108,8 @@ metadata:
 
 | 文件 | 用途 |
 |---|---|
+| `references/capability-check.md` | 调查前核实宿主工具、授权和降级路径 |
+| `references/output-contract.md` | 用户可见答复的最小字段、来源状态和反馈回流 |
 | `references/needs-clarification.md` | 个性化判断前如何识别关键缺口、提问并等待 |
 | `references/gap-map.md` | 信息差地图：十类缺口、重要未知三件事、规则属性分档处理 |
 | `references/supervision-protocol.md` | 监督与交接：三种运行方式、完成证据、打回清单 |

@@ -17,6 +17,8 @@
 | 文件 | 归属 | 是否随核心包分发 | 唯一职责 |
 |---|---|---:|---|
 | skills/life-guide/SKILL.md | 运行入口 | 是 | 首要准则、启动判据、主流程和参考路由 |
+| references/capability-check.md | 运行细则 | 是 | 调查前能力预检与降级路径 |
+| references/output-contract.md | 运行细则 | 是 | 用户可见答复的最小字段与反馈回流 |
 | references/needs-clarification.md | 运行细则 | 是 | 关键缺口识别、先问后研究和进入调查的条件 |
 | references/gap-map.md | 运行细则 | 是 | 信息差地图：十类缺口、重要未知三件事、未知管理统一位置 |
 | references/option-expansion.md | 运行细则 | 是 | 发现不同路径、参与位置和进入方式 |
@@ -51,6 +53,6 @@ WorkBuddy Open Platform 的字段与标准核心不同，详见 [`adapters/workb
 
 ## 当前状态
 
-- 标准核心候选：`skills/life-guide/`，版本 5.1.14（2026-10-30 更新）。
-- WorkBuddy 安装目录已复制上一候选 5.1.12；当前标准包为 5.1.14，目标目录仍残留 6 个旧参考文件，尚未完成干净替换，也没有自动触发与安装后行为证据。
+- 标准核心候选：`skills/life-guide/`，版本 6.0.0（2026-10-30 更新）。
+- WorkBuddy 安装目录已复制上一候选 5.1.12；当前标准包为 6.0.0，目标目录仍残留 6 个旧参考文件，尚未完成干净替换，也没有自动触发与安装后行为证据。
 - GitHub 发布、作者展示名和目标宿主兼容性：尚未完成；许可证已采用 MIT。
