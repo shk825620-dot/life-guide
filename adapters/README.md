@@ -9,5 +9,7 @@
 | Gemini CLI | [`gemini-cli/README.md`](gemini-cli/README.md) | `.gemini/skills/` 或 `.agents/skills/` 扫描，按描述自动激活 | 文档适配；真实 `/skills` 与激活未验证 |
 | GitHub Copilot | [`github-copilot/README.md`](github-copilot/README.md) | `.github/skills/`、`.claude/skills/` 或 `.agents/skills/` | 文档适配；真实加载未验证 |
 | WorkBuddy | [`workbuddy/README.md`](workbuddy/README.md) | WorkBuddy 专属字段与导入流程 | 已复制上一候选 5.1.12；当前标准包为 6.0.0，目标目录仍残留 6 个旧参考文件，自动触发未验证 |
+| 豆包 Agent / 工作任务 | [`doubao/README.md`](doubao/README.md) | 豆包自定义技能/能力插件（公开资料未证明直接识别标准目录） | 文档映射；未实测导入、触发和工具调用 |
+| 扣子 Coze | [`coze/README.md`](coze/README.md) | 官方支持 Skill/MCP/Panel 插件组合 | 文档适配；未实测创建、发布和运行 |
 
 “标准包可移植”只表示目录和 frontmatter 符合开放格式，不表示任何宿主一定会自动触发、读取全部参考文件或提供联网工具。
