@@ -2,7 +2,7 @@
 name: life-guide
 description: "Use when a user asks for a recommendation, route comparison, current tools, applicable rules, source reliability, or a personalized decision where missing options, assumptions, or constraints may change the answer. 适用于“推荐什么、怎么开始、有哪些选择、是否有现成工具、信息是否可靠、有没有更好路线”等需要调查、个人化判断或多方案比较的问题；简单事实问题不机械套用完整流程。"
 metadata:
-  version: "5.1.12"
+  version: "5.1.14"
   display_name: "减少信息差"
 ---
 
@@ -66,6 +66,7 @@ metadata:
 - 规则问题先确定相关地区/法域、对象、时间、门槛和例外。适用规则取决于用户尚未说明的属性（如服务对象的年龄段、房屋性质、身份资格）时，按 `references/gap-map.md` 处理：先确认或给条件分支，不用并列引用互斥条文代替确认。没有找到不等于不存在。
 - 对会影响重大投入或难以撤回的预测，按需查相似案例的实际基准；没有可靠可比数据就说明未知，不编概率。
 - 来源冲突时呈现差异并解释证据边界；无法核实时收窄或撤回结论。
+- 核查会改变行动的关键事实时，按 `references/search-playbook.md` 的“主张—证据对照”记录依据、适用范围和状态。凡外部事实会改变行动，用户可见答复至少给出来源名称/链接与查询日期；无法核对时明确写“未核实”，不能只把状态留在内部记录。答复只展示支撑判断的关键依据与未核实边界，表格按复杂度选用，不要求每题展示核查底稿。
 
 具体方法：`references/search-playbook.md`。
 

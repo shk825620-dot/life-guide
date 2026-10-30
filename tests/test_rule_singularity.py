@@ -48,6 +48,13 @@ def main() -> int:
         if marker not in section:
             problems.append(f"comparison section does not require: {marker}")
 
+    evidence_start = main_text.find("### 3. 核验会影响判断的信息")
+    evidence_end = main_text.find("### 4.", evidence_start)
+    evidence_section = main_text[evidence_start:evidence_end] if evidence_start != -1 and evidence_end != -1 else ""
+    for marker in ("主张—证据对照", "适用范围", "状态", "来源名称/链接", "查询日期", "未核实"):
+        if marker not in evidence_section:
+            problems.append(f"evidence section does not route: {marker}")
+
     tier_start = main_text.find("### 1.5 选择调查档位")
     tier_end = main_text.find("### 2.", tier_start)
     tier = main_text[tier_start:tier_end] if tier_start != -1 and tier_end != -1 else ""

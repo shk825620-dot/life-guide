@@ -32,6 +32,7 @@
 | references/examples.md | 示例 | 是 | 展示关键行为分支；不是实测证据 |
 | assets/decision-log.md | 可选模板 | 是 | 用户自愿使用的通用决策记录空白模板 |
 | CHANGELOG.md | 维护记录 | 是 | 公开包的版本变化与验证边界 |
+| LICENSE | 发布边界 | 是 | MIT 许可证文本 |
 | tests/acceptance-cases.md | 测试标准 | 仓库级，不随 Skill 安装 | 13 个冻结行为情形，不代表已经通过 |
 | tests/acceptance-cases-4.0.1.md | 新增测试标准 | 仓库级，不随 Skill 安装 | 四项新增行为回归标准；仅资源路线漏检有历史 PARTIAL 基线，其余待目标宿主实测 |
 | tests/emotion-bias-acceptance-2026-10-25.md | 新增测试标准 | 仓库级，不随 Skill 安装 | 六类情绪压力与认知偏差案例；当前仅冻结标准，尚未完成真实行为验收 |
@@ -50,6 +51,6 @@ WorkBuddy Open Platform 的字段与标准核心不同，详见 [`adapters/workb
 
 ## 当前状态
 
-- 标准核心候选：`skills/life-guide/`，版本 5.1.12（2026-10-28 更新）。
-- WorkBuddy 安装目录已复制候选 5.1.12，但仍残留 6 个旧参考文件；尚未完成干净替换，也没有自动触发与安装后行为证据。
-- GitHub 发布、许可证、作者展示名和目标宿主兼容性：尚未完成。
+- 标准核心候选：`skills/life-guide/`，版本 5.1.14（2026-10-30 更新）。
+- WorkBuddy 安装目录已复制上一候选 5.1.12；当前标准包为 5.1.14，目标目录仍残留 6 个旧参考文件，尚未完成干净替换，也没有自动触发与安装后行为证据。
+- GitHub 发布、作者展示名和目标宿主兼容性：尚未完成；许可证已采用 MIT。
