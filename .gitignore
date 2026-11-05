@@ -15,3 +15,6 @@ __pycache__/
 /_ppt_render/
 /--name/
 /build/
+/dist/
+/.playwright-mcp/
+/life-guide-*.zip
