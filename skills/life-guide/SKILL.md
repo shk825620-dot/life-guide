@@ -3,7 +3,7 @@ name: life-guide
 description: "Use when a user asks for a recommendation, route comparison, current tools, applicable rules, source reliability, or a personalized decision where missing options, assumptions, or constraints may change the answer. 适用于“推荐什么、怎么开始、有哪些选择、是否有现成工具、信息是否可靠、有没有更好路线”等需要调查、个人化判断或多方案比较的问题；单个事实、纯写作和不需要情境判断的问题不启动完整流程。"
 license: MIT
 metadata:
-  version: "6.0.2"
+  version: "6.0.3"
   display_name: "减少信息差"
 ---
 
@@ -60,6 +60,7 @@ metadata:
 - 需要外部事实、文件、计算、登录或子 Agent 时，先按 `references/capability-check.md` 标记当前宿主能力；能力状态会影响结论时，向用户说明缺口和降级路径。
 
 搜索、工具和账号访问按 `references/search-playbook.md` 与 `references/tool-access.md` 执行。
+- 检索渠道按分工使用：搜索引擎负责找关键词和原始入口；官方文档、法规、源码和统计资料确认事实；Reddit、X、微博、小红书发现真实讨论、失败信号和最新动态；YouTube观察具体操作和版本差异。社交内容和视频只能作为线索或现实反馈，关键结论必须回到能直接支持它的来源。
 - 候选空间可能过窄，或用户提到可能打开其他参与位置的既有关系/资源时，读 `references/option-expansion.md`。
 
 ### 3. 核验会影响判断的信息
