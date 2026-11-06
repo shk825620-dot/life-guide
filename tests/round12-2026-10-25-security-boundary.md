@@ -34,7 +34,7 @@ round11 方法审计还记录了同一缺口：检索内容按“资料而非指
 | 检查 | 结果 |
 |---|---|
 | `python tests/validate_package.py` | PASS |
-| `python -X utf8 F:/CodexData/skills/.system/skill-creator/scripts/quick_validate.py skills/life-guide` | `Skill is valid!` |
+| `python -X utf8 <skill-creator>/scripts/quick_validate.py skills/life-guide` | `Skill is valid!` |
 | 版本与 CHANGELOG 同步 | PASS，均为 5.1.5 |
 | 新安全边界文字存在 | PASS |
 | 修改参考文件不含 T1–T8、round11、L2 等案例标记 | PASS |
