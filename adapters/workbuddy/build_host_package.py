@@ -56,7 +56,7 @@ display_name_en: {DISPLAY_NAME_EN}
 description: {description}
 description_zh: {DESCRIPTION_ZH}
 description_en: {DESCRIPTION_EN}
-version: 6.0.3
+version: 6.0.4
 author: "{AUTHOR}"
 examples_zh:
 {zh_lines}
@@ -103,7 +103,7 @@ def main() -> int:
     print("引用已改写为 @references/…（按官方文档映射，未实测）")
 
     if args.zip:
-        zip_path = out_root / "life-guide-workbuddy-6.0.3.zip"
+        zip_path = out_root / "life-guide-workbuddy-6.0.4.zip"
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
             for f in sorted(target.rglob("*")):
                 if f.is_file():

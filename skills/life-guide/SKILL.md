@@ -3,7 +3,7 @@ name: life-guide
 description: "Use when a user asks for a recommendation, route comparison, current tools, applicable rules, source reliability, or a personalized decision where missing options, assumptions, or constraints may change the answer. 适用于“推荐什么、怎么开始、有哪些选择、是否有现成工具、信息是否可靠、有没有更好路线”等需要调查、个人化判断或多方案比较的问题；单个事实、纯写作和不需要情境判断的问题不启动完整流程。"
 license: MIT
 metadata:
-  version: "6.0.3"
+  version: "6.0.4"
   display_name: "减少信息差"
 ---
 
@@ -82,7 +82,9 @@ metadata:
 
 不把不可比价值擅自折算成综合分；未知偏好只有在会改变选择时才交给用户。证据不足以确定唯一推荐时，明确给条件化判断，不伪装确定性。
 
-结论按 `references/output-contract.md` 选择最小可用答复合同；高影响或需要比较的任务不得省略依据状态、最大未知、可执行下一步和停止/改判条件。
+结论默认按 `references/output-contract.md` 的「默认短答」交付：先给当前判断，只保留真正改变决策的 2–4 条依据，写明最大未知、最不利分支和最低成本下一步；用户要求展开证据或任务属于重大决策时，再展开详细来源、完整比较、机会成本、相对耗时、稳健性和停止/改判条件。追问轮次只报告新增变化，不重复已说过的背景和来源。
+
+复杂问题、多方案比较、因果链和重大决策在一句话结论后附思维导图（宿主支持 Mermaid 用 Mermaid，否则用 3–4 层纯文本树），只放会改变判断的节点，至少标出结论、关键分支、依据或未知、下一步；简单事实和单步操作不生成图。导图不能替代来源、日期、适用范围和风险说明。规则详见 `references/output-contract.md`。
 
 结论带上适用边界、置信理由、未验证项、推翻条件和**可执行下一步**。下一步应包含要做什么、成本/前置条件，以及最低成本如何验证或何时停止。只有工具名、课程名或“可以考虑”不算行动方案。
 
